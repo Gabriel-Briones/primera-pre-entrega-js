@@ -79,7 +79,7 @@ function seleccionPaisDestino() {
 }
 
 function ingresarDinero() {
-    let monto = prompt("Ingrese cuanto dinero desea convertir:")
+    let monto = parseFloat(prompt("Ingrese cuanto dinero desea convertir:"))
     return monto;
 }
 
