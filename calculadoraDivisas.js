@@ -9,7 +9,6 @@ let montoUSD = 0
 let montoDestino = 0
 let ask = true
 
-
 // Llamado a funciones
 // Función para elegir el país de origen
 function seleccionPaisOrigen() {
@@ -49,27 +48,27 @@ function seleccionPaisDestino() {
         case "Brasil":
             alert("Has seleccionado como tu país de Destino " + pais);
             montoDestino = montoUSD / Brasil;
-            alert("Equivale a " + montoDestino + " en la moneda de destino");
+            alert("Equivale a " + montoDestino.toFixed(2) + " en la moneda de destino");
             break;
         case "Peru":
             alert("Has seleccionado como tu país de Destino " + pais);
             montoDestino = montoUSD / Peru;
-            alert("Equivale a " + montoDestino + " en la moneda de destino");
+            alert("Equivale a " + montoDestino.toFixed(2) + " en la moneda de destino");
             break;
         case "Bolivia":
             alert("Has seleccionado como tu país de Destino " + pais);
             montoDestino = montoUSD / Bolivia;
-            alert("Equivale a " + montoDestino + " en la moneda de destino");
+            alert("Equivale a " + montoDestino.toFixed(2) + " en la moneda de destino");
             break;
         case "Argentina":
             alert("Has seleccionado como tu país de Destino " + pais);
             montoDestino = montoUSD / Argentina;
-            alert("Equivale a " + montoDestino + " en la moneda de destino");
+            alert("Equivale a " + montoDestino.toFixed(2) + " en la moneda de destino");
             break;
         case "Chile":
             alert("Has seleccionado como tu país de Destino " + pais);
             montoDestino = montoUSD / Chile;
-            alert("Equivale a " + montoDestino + " en la moneda de destino");
+            alert("Equivale a " + montoDestino.toFixed(2) + " en la moneda de destino");
             break;
         default:
             alert("País no disponible, ingresar nuevamente el país");
@@ -85,14 +84,14 @@ function ingresarDinero() {
 
 // Bucle principal
 do {
-seleccionPaisOrigen()
-seleccionPaisDestino()
-    if (window.confirm("Quieres seguir haciendo conversiones?")){
+    seleccionPaisOrigen()
+    seleccionPaisDestino()
+    if (window.confirm("Quieres seguir haciendo conversiones?")) {
         ask = true
         alert("Nueva conversión");
     }
-    else{
-    ask = false
+    else {
+        ask = false
     }
 } while (ask)
 alert("Gracias por usar nuestros servicios");
