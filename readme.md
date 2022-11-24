@@ -2,4 +2,4 @@
 
 En este trabajo se aplica lo aprendido de Javascript hasta el momento.
 
-Link de Github-Pages: 
+Link de Github-Pages: https://gabriel-briones.github.io/primera-pre-entrega-js/
